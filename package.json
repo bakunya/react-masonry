@@ -1,0 +1,30 @@
+{
+    "name": "@bakunya/react-masonry",
+    "version": "0.0.4",
+    "description": "An easy to use and simple masonry layout for React Js based on flexbox column.",
+    "author": "bakunya",
+    "license": "MIT",
+    "homepage": "https://github.com/bakunya/react-masonry#readme",
+    "bugs": {
+      "url": "https://github.com/bakunya/react-masonry/issues"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/bakunya/react-masonry.git"
+    },
+    "keywords": [
+      "react",
+      "react-masonry",
+      "react masonry",
+      "react-component",
+      "react component",
+      "flexbox",
+      "react-masonry-component",
+      "react masonry component"
+    ],
+    "dependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    }
+  }
+  
