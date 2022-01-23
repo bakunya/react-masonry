@@ -1,6 +1,6 @@
 {
     "name": "@bakunya/react-masonry",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "An easy to use and simple masonry layout for React Js based on flexbox column.",
     "author": "bakunya",
     "license": "MIT",
