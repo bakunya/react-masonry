@@ -30,23 +30,23 @@ const masonryColumnStyle = {
 }
 
 const Masonry = ({ dataArray, columnCount, ChildsElement }) => {
-    const results = useMemo(() => {
-        return divideArray(dataArray, columnCount)
+    return useMemo(() => {
+        const arr = divideArray(dataArray, columnCount)
+
+        return (
+            <div style={masonryContainerStyle}>
+                {
+                    arr?.map((itm, i) => (
+                        <div key={i} style={masonryColumnStyle}>
+                            {
+                                itm?.map((elm, i) => <ChildsElement value={elm} key={elm?.id ?? i} />)
+                            }
+                        </div>
+                    ))
+                }
+            </div>
+        )
     }, [dataArray, columnCount])
-    
-    return (
-        <div style={masonryContainerStyle}>
-            {
-                results?.map((itm, i) => (
-                    <div key={i} style={masonryColumnStyle}>
-                        {
-                            itm?.map((elm, i) => <ChildsElement value={elm} key={elm?.id ?? i} />)
-                        }
-                    </div>
-                ))
-            }
-        </div>
-    )
 }
 
 export default memo(Masonry)
